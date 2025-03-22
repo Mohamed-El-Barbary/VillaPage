@@ -7,21 +7,21 @@ const landsPage = document.querySelectorAll(".landsPage");
 
 vilaSale.forEach((button) => {
   button.addEventListener("click", () => {
-    location.href = "./villaPage.html";
+    location.href = "../pages/villaPage.html";
     console.log("Navigating to villaPage.html");
   });
 });
 
 housePage.forEach((button) => {
   button.addEventListener("click", () => {
-    location.href = "./housePage.html";
+    location.href = "../pages/housePage.html";
     console.log("Navigating to housePage.html");
   });
 });
 
 landsPage.forEach((button) => {
   button.addEventListener("click", () => {
-    location.href = "./landPage.html";
+    location.href = "../pages/landPage.html";
     console.log("Navigating to landPage.html");
   });
 });
