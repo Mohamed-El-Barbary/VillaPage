@@ -1,0 +1,869 @@
+/* Start Variable */
+/* End Variable */
+
+/* Start Global Style */
+* {
+  box-sizing: border-box;
+  --webkit-box-sizing: border-box;
+  --moz-box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large */
+@media (min-width: 1400px) {
+  .container {
+    width: 1350px;
+  }
+}
+
+/* End Global Style */
+
+/*~ Start Index.html  */
+
+/* Start Header */
+
+.header {
+  background-image: url(..//image/architect.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+}
+/* End Header */
+
+/***** navbar *****/
+nav {
+  padding-block: 20px;
+  font-weight: bold;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+}
+
+nav .container .logo span {
+  margin-right: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav .container .nav-right {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .container .links ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav .container .links ul li {
+  display: inline;
+}
+
+nav .container a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  padding: 5px;
+  transition: all 0.5s;
+  border-radius: 5px;
+}
+
+nav .container a:hover {
+  background-color: #eee;
+}
+
+nav .dropbtn {
+  font-size: 16px;
+  border: none;
+}
+
+nav .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+nav .dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+nav .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: all 0.5s;
+}
+
+nav .dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+nav .dropdown:hover .dropdown-content {
+  display: block;
+  cursor: pointer;
+}
+
+nav .dropdown:hover .dropbtn {
+  background-color: white;
+}
+/***** End navbar *****/
+
+/* Start Landing */
+
+.landing .landing-intro {
+  min-height: 100vh;
+  color: black;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 20px;
+  align-items: start;
+}
+
+.landing .landing-intro span {
+  font-weight: 400;
+}
+
+.landing .caption {
+  max-width: 300px;
+  margin: 60px 0;
+}
+.landing .caption .caption-content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.landing .caption .caption-content button {
+  width: fit-content;
+  padding: 10px 20px;
+  background-color: #09c;
+  color: #fff;
+  border: #09c;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.landing .search-box {
+  margin: 80px 0;
+  align-content: center;
+  position: relative;
+}
+.landing .search-box input {
+  width: 100%;
+  padding: 5px 15px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+.landing .search-box button {
+  position: absolute;
+  right: 10px;
+  background-color: #fff;
+  border: none;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.landing .login {
+  margin: 75px 0;
+  width: fit-content;
+  justify-self: end;
+}
+.landing .login-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.landing .login .btn {
+  background-color: #0c4a63;
+  color: white;
+  padding: 20px;
+  max-width: fit-content;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.landing .login .btn:hover {
+  background-color: #0a3b4f;
+}
+.landing .login .icon {
+  font-size: 18px;
+}
+.landing .login .login-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #0c4a63;
+  width: 180px;
+  text-align: center;
+}
+
+/* End Landing */
+
+/* Start Pojects */
+.features {
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.features .container .product {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-gap: 40px 40px;
+}
+
+.features .card .inner {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding-block: 0.625rem;
+}
+
+.features .card .inner img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  height: 170px;
+}
+
+.features .card .card-body,
+.features .card .card-footer {
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.features .inner .buttons {
+  margin-top: 5px;
+  display: flex;
+}
+.features .inner .buttons button {
+  background: #d9d9a3;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border-radius: 99999999px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.features .inner .buttons button:hover {
+  background: #c5c58c;
+}
+
+/* End Projects */
+
+/* start Contact */
+
+.contact-info {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.contact-info .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-info .content .text h2 {
+  font-size: 28px;
+  font-weight: normal;
+}
+
+.contact-info .content .text p {
+  font-size: 17px;
+  color: #686868;
+  line-height: 1.8;
+  padding-bottom: 20px;
+}
+
+.contact-info .content .text span.details-info {
+  color: #686868;
+  font-size: 17px;
+}
+
+.contact-info .content .text ul {
+  list-style: none;
+  padding: 15px 0 0;
+}
+.contact-info .content .text ul li {
+  padding: 10px 0;
+}
+.contact-info .content .text ul img {
+  width: 36px;
+  background-color: #87ceeb;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.contact-info .content .image img {
+  width: 100%;
+}
+
+/* end contact */
+
+/* start footer */
+.footer {
+  background-color: #87ceeb;
+  padding-block: 80px;
+  text-align: center;
+  position: relative;
+}
+.footer h2 {
+  margin: 0;
+  font-size: 24px;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px auto;
+}
+.footer-left,
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.footer-left p,
+.footer-right p {
+  margin: 5px 10px;
+  font-size: 18px;
+  padding-inline: 10px;
+  position: relative;
+}
+
+.footer-left p::before,
+.footer-right p::before {
+  position: absolute;
+  content: "\f3c5";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: red;
+  left: -10px;
+}
+
+.footer-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-image img {
+  justify-self: flex-end;
+  align-content: flex-end;
+  align-self: flex-end;
+}
+
+.footer-image img {
+  width: 80px;
+}
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-left,
+  .footer-right {
+    align-items: center;
+  }
+  .footer-image {
+    position: static;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 992px) {
+  .contact-info .content {
+    flex-direction: column;
+  }
+}
+/* End footer */
+/*~ End index.html */
+
+/*! Start VillaPage.html */
+
+/* Header Section */
+
+.villaPage {
+  padding-bottom: 5rem;
+}
+
+.villaPage .header {
+  position: relative;
+  background: url("../image/Villa-Background-Images2.jpg") center/cover
+    no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  position: relative;
+}
+
+.villaPage .header span {
+  font-size: 24px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.villaPage .header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.villaPage .header-content {
+  position: relative;
+  z-index: 1;
+}
+
+.villaPage .header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.villaPage .header p {
+  font-size: 1.2rem;
+}
+
+/* Scroll Up Button */
+.villaPage .scroll-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: white;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s;
+}
+
+.villaPage .scroll-up:hover {
+  background: lightgray;
+}
+
+/* Villas Section */
+.villaPage .villa-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px;
+  background: #f5f5f5;
+}
+
+/* Villa Card */
+.villaPage .villa-card {
+  background: white;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.villaPage .villa-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.villaPage .villa-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.villaPage .villa-card p {
+  font-size: 1rem;
+  color: gray;
+}
+
+/* Footer Styles */ /* Footer Styles */
+.villaPage-footer {
+  background: linear-gradient(to right, #2c3e50, #34495e);
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+.villaPage-footer .footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  margin: auto;
+}
+
+.villaPage-footer .footer-left,
+.villaPage-footer .footer-right {
+  flex: 1;
+  padding: 10px;
+}
+
+.villaPage-footer .footer-left h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.villaPage-footer .footer-left p {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.villaPage-footer .footer-right {
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .villaPage-footer .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/*! End VillaPage.html */
+
+/*? Satrt Details Page  */
+
+.details-page {
+  margin: 80px auto;
+}
+
+.details-page .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.details-page .details-header {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2a9d8f;
+  margin-bottom: 20px;
+}
+
+.details-page .details-content {
+  display: flex;
+  max-width: 900px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.details-page .image-section {
+  width: 50%;
+}
+
+.details-page .image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.details-page .details-section {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.details-page .details-section h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #333;
+}
+
+.details-page .details-section p {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #666;
+}
+
+.details-page .details-section p strong {
+  color: #000;
+}
+
+.details-page .price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2a9d8f;
+  margin-top: 10px;
+}
+
+/*? End Details Page  */
+
+/** Start House Page  */
+
+.housePage {
+  padding-bottom: 5rem;
+}
+
+.housePage .header {
+  position: relative;
+  background: url("../image/House Interior Photos,/h23.jpeg") center/cover
+    no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  position: relative;
+}
+.housePage .header span {
+  font-size: 24px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.housePage .header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.housePage .header-content {
+  position: relative;
+  z-index: 1;
+}
+
+.housePage .header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.housePage .header p {
+  font-size: 1.2rem;
+}
+
+/* Scroll Up Button */
+.housePage .scroll-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: white;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s;
+}
+
+.housePage .scroll-up:hover {
+  background: lightgray;
+}
+
+/** Start House Page  */
+
+/***** contact *****/
+.contact-us {
+  padding-block: 5rem;
+}
+.contact-us .chat-container {
+  width: 400px;
+  height: 500px;
+  margin: auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.contact-us .arrow {
+  padding-left: 20px;
+  cursor: pointer;
+}
+.contact-us .chat-header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+}
+
+.contact-us i {
+  border-radius: 50%;
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.contact-us .username {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.contact-us .chat-body {
+  flex: 1;
+  padding: 10px;
+  background-color: #f9f9f9;
+  overflow-y: auto;
+}
+
+.contact-us .chat-footer {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background: #fff;
+}
+
+.contact-us .chat-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+.contact-us .send-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-us .send-btn:hover {
+  background-color: #0056b3;
+}
+/***** End contact *****/
+
+/***** Land *****/
+
+.land-page {
+  padding-bottom: 5rem;
+}
+
+.land-page .header {
+  position: relative;
+  background: url("../image/Agricultural_land/L4.jpeg") center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  position: relative;
+}
+.land-page .header span {
+  font-size: 24px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.land-page .header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.land-page .header-content {
+  position: relative;
+  z-index: 1;
+}
+
+.land-page .header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.land-page .header p {
+  font-size: 1.2rem;
+}
+
+/* Scroll Up Button */
+.land-page .scroll-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: white;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s;
+}
+
+.land-page .scroll-up:hover {
+  background: lightgray;
+}
+
+/***** End Land *****/

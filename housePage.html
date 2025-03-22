@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Architecture</title>
+    <!-- main style -->
+    <link rel="stylesheet" href="/css/main.css" />
+    <!-- Render Element Normally -->
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="/css/all.min.css" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="housePage">
+      <div class="header">
+        <button class="scroll-up" onclick="scrollToTop()">&#8593;</button>
+        <div class="header-content">
+          <span role="link" id="go-home">Go To Home</span>
+          <h1>Welcome to Our Luxury Apartments</h1>
+          <p>Discover the most stunning Apartments with breathtaking views.</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Villas Section -->
+    <section class="villaPage">
+      <div class="features">
+        <div class="container">
+          <h2>Top Apartments Deals</h2>
+          <div class="product">
+            <div class="card">
+              <div class="inner">
+                <img
+                  class="photo-src"
+                  src="/image/House Interior Photos,/h1.jpg"
+                  alt="House in Cairo"
+                />
+                <div class="card-body">
+                  <h3>House</h3>
+                  <p><strong>Location:</strong> Luxor</p>
+                  <p><strong>Number of rooms:</strong> 4</p>
+                </div>
+                <div class="card-footer">
+                  <div class="buttons">
+                    <button class="go-details">Details</button>
+                    <button class="contact-owner">Contact the owner</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="inner">
+                <img
+                  class="photo-src"
+                  src="/image/House Interior Photos,/h2.jpg"
+                  alt="House in Aswan"
+                />
+                <div class="card-body">
+                  <h3>House</h3>
+                  <p><strong>Location:</strong> Port Said</p>
+                  <p><strong>Number of rooms:</strong> 5</p>
+                </div>
+                <div class="card-footer">
+                  <div class="buttons">
+                    <button class="go-details">Details</button>
+                    <button class="contact-owner">Contact the owner</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="inner">
+                <img
+                  class="photo-src"
+                  src="/image/House Interior Photos,/h21.jpeg"
+                  alt="House in Alexandria"
+                />
+                <div class="card-body">
+                  <h3>House</h3>
+                  <p><strong>Location:</strong> Suez</p>
+                  <p><strong>Number of rooms:</strong> 6</p>
+                </div>
+                <div class="card-footer">
+                  <div class="buttons">
+                    <button class="go-details">Details</button>
+                    <button class="contact-owner">Contact the owner</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="inner">
+                <img
+                  class="photo-src"
+                  src="/image/House Interior Photos,/h3.jpg"
+                  alt="House in Giza"
+                />
+                <div class="card-body">
+                  <h3>House</h3>
+                  <p><strong>Location:</strong> Fayoum</p>
+                  <p><strong>Number of rooms:</strong> 3</p>
+                </div>
+                <div class="card-footer">
+                  <div class="buttons">
+                    <button class="go-details">Details</button>
+                    <button class="contact-owner">Contact the owner</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="inner">
+                <img
+                  class="photo-src"
+                  src="/image/House Interior Photos,/h4.jpg"
+                  alt="House in Hurghada"
+                />
+                <div class="card-body">
+                  <h3>House</h3>
+                  <p><strong>Location:</strong> Dahab</p>
+                  <p><strong>Number of rooms:</strong> 4</p>
+                </div>
+                <div class="card-footer">
+                  <div class="buttons">
+                    <button class="go-details">Details</button>
+                    <button class="contact-owner">Contact the owner</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="inner">
+                <img
+                  class="photo-src"
+                  src="/image/House Interior Photos,/h5.jpg"
+                  alt="House in Sharm El Sheikh"
+                />
+                <div class="card-body">
+                  <h3>House</h3>
+                  <p><strong>Location:</strong> Taba</p>
+                  <p><strong>Number of rooms:</strong> 5</p>
+                </div>
+                <div class="card-footer">
+                  <div class="buttons">
+                    <button class="go-details">Details</button>
+                    <button class="contact-owner">Contact the owner</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="inner">
+                <img
+                  class="photo-src"
+                  src="/image/House Interior Photos,/h6.jpg"
+                  alt="House in Marsa Alam"
+                />
+                <div class="card-body">
+                  <h3>House</h3>
+                  <p><strong>Location:</strong> Siwa</p>
+                  <p><strong>Number of rooms:</strong> 6</p>
+                </div>
+                <div class="card-footer">
+                  <div class="buttons">
+                    <button class="go-details">Details</button>
+                    <button class="contact-owner">Contact the owner</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="inner">
+                <img
+                  class="photo-src"
+                  src="/image/House Interior Photos,/h7.jpg"
+                  alt="House in Cairo"
+                />
+                <div class="card-body">
+                  <h3>House</h3>
+                  <p><strong>Location:</strong> Minya</p>
+                  <p><strong>Number of rooms:</strong> 3</p>
+                </div>
+                <div class="card-footer">
+                  <div class="buttons">
+                    <button class="go-details">Details</button>
+                    <button class="contact-owner">Contact the owner</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="inner">
+                <img
+                  class="photo-src"
+                  src="/image/House Interior Photos,/h8.jpg"
+                  alt="House in Aswan"
+                />
+                <div class="card-body">
+                  <h3>House</h3>
+                  <p><strong>Location:</strong> Beni Suef</p>
+                  <p><strong>Number of rooms:</strong> 4</p>
+                </div>
+                <div class="card-footer">
+                  <div class="buttons">
+                    <button class="go-details">Details</button>
+                    <button class="contact-owner">Contact the owner</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="inner">
+                <img
+                  class="photo-src"
+                  src="/image/House Interior Photos,/h9.jpg"
+                  alt="House in Alexandria"
+                />
+                <div class="card-body">
+                  <h3>House</h3>
+                  <p><strong>Location:</strong> Ismailia</p>
+                  <p><strong>Number of rooms:</strong> 5</p>
+                </div>
+                <div class="card-footer">
+                  <div class="buttons">
+                    <button class="go-details">Details</button>
+                    <button class="contact-owner">Contact the owner</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="inner">
+                <img
+                  class="photo-src"
+                  src="/image/House Interior Photos,/h10.jpg"
+                  alt="House in Giza"
+                />
+                <div class="card-body">
+                  <h3>House</h3>
+                  <p><strong>Location:</strong> Qena</p>
+                  <p><strong>Number of rooms:</strong> 6</p>
+                </div>
+                <div class="card-footer">
+                  <div class="buttons">
+                    <button class="go-details">Details</button>
+                    <button class="contact-owner">Contact the owner</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="inner">
+                <img
+                  class="photo-src"
+                  src="/image/House Interior Photos,/h11.jpg"
+                  alt="House in Hurghada"
+                />
+                <div class="card-body">
+                  <h3>House</h3>
+                  <p><strong>Location:</strong> Sohag</p>
+                  <p><strong>Number of rooms:</strong> 3</p>
+                </div>
+                <div class="card-footer">
+                  <div class="buttons">
+                    <button class="go-details">Details</button>
+                    <button class="contact-owner">Contact the owner</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="inner">
+                <img
+                  class="photo-src"
+                  src="/image/House Interior Photos,/h12.jpg"
+                  alt="House in Sharm El Sheikh"
+                />
+                <div class="card-body">
+                  <h3>House</h3>
+                  <p><strong>Location:</strong> Assiut</p>
+                  <p><strong>Number of rooms:</strong> 4</p>
+                </div>
+                <div class="card-footer">
+                  <div class="buttons">
+                    <button class="go-details">Details</button>
+                    <button class="contact-owner">Contact the owner</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="inner">
+                <img
+                  class="photo-src"
+                  src="/image/House Interior Photos,/h13.jpeg"
+                  alt="House in Marsa Alam"
+                />
+                <div class="card-body">
+                  <h3>House</h3>
+                  <p><strong>Location:</strong> Zagazig</p>
+                  <p><strong>Number of rooms:</strong> 5</p>
+                </div>
+                <div class="card-footer">
+                  <div class="buttons">
+                    <button class="go-details">Details</button>
+                    <button class="contact-owner">Contact the owner</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="inner">
+                <img
+                  class="photo-src"
+                  src="/image/House Interior Photos,/h14.jpeg"
+                  alt="House in Marsa Alam"
+                />
+                <div class="card-body">
+                  <h3>House</h3>
+                  <p><strong>Location:</strong> Damietta</p>
+                  <p><strong>Number of rooms:</strong> 6</p>
+                </div>
+                <div class="card-footer">
+                  <div class="buttons">
+                    <button class="go-details">Details</button>
+                    <button class="contact-owner">Contact the owner</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="inner">
+                <img
+                  class="photo-src"
+                  src="/image/House Interior Photos,/h15.jpeg"
+                  alt="House in Marsa Alam"
+                />
+                <div class="card-body">
+                  <h3>House</h3>
+                  <p><strong>Location:</strong> Kafr El Sheikh</p>
+                  <p><strong>Number of rooms:</strong> 3</p>
+                </div>
+                <div class="card-footer">
+                  <div class="buttons">
+                    <button class="go-details">Details</button>
+                    <button class="contact-owner">Contact the owner</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="inner">
+                <img
+                  class="photo-src"
+                  src="/image/House Interior Photos,/h16.jpeg"
+                  alt="House in Marsa Alam"
+                />
+                <div class="card-body">
+                  <h3>House</h3>
+                  <p><strong>Location:</strong> Mansoura</p>
+                  <p><strong>Number of rooms:</strong> 4</p>
+                </div>
+                <div class="card-footer">
+                  <div class="buttons">
+                    <button class="go-details">Details</button>
+                    <button class="contact-owner">Contact the owner</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="inner">
+                <img
+                  class="photo-src"
+                  src="/image/House Interior Photos,/h18.jpeg"
+                  alt="House in Marsa Alam"
+                />
+                <div class="card-body">
+                  <h3>House</h3>
+                  <p><strong>Location:</strong> El Arish</p>
+                  <p><strong>Number of rooms:</strong> 5</p>
+                </div>
+                <div class="card-footer">
+                  <div class="buttons">
+                    <button class="go-details">Details</button>
+                    <button class="contact-owner">Contact the owner</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="inner">
+                <img
+                  class="photo-src"
+                  src="/image/House Interior Photos,/h19.jpg"
+                  alt="House in Marsa Alam"
+                />
+                <div class="card-body">
+                  <h3>House</h3>
+                  <p><strong>Location:</strong> El Mahalla</p>
+                  <p><strong>Number of rooms:</strong> 6</p>
+                </div>
+                <div class="card-footer">
+                  <div class="buttons">
+                    <button class="go-details">Details</button>
+                    <button class="contact-owner">Contact the owner</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="inner">
+                <img
+                  class="photo-src"
+                  src="/image/House Interior Photos,/h20.jpeg"
+                  alt="House in Marsa Alam"
+                />
+                <div class="card-body">
+                  <h3>House</h3>
+                  <p><strong>Location:</strong> Tanta</p>
+                  <p><strong>Number of rooms:</strong> 3</p>
+                </div>
+                <div class="card-footer">
+                  <div class="buttons">
+                    <button class="go-details">Details</button>
+                    <button class="contact-owner">Contact the owner</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer Section -->
+    <footer class="villaPage-footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>Villa Paradise</h3>
+        </div>
+        <div class="footer-right">
+          <p>Discover the most luxurious villas with breathtaking views.</p>
+          <p>&copy; 2025 Villa Paradise. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./JS/subPages.js"></script>
+  </body>
+</html>
