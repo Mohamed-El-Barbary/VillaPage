@@ -6,7 +6,7 @@ const contactOwnerPage = document.querySelectorAll("contact-owner");
 
 //!  Start JS
 goToHome.addEventListener("click", (e) => {
-  location.href = "/index.html";
+  location.href = "../index.html";
 });
 
 function scrollToTop() {
@@ -20,7 +20,6 @@ document.querySelectorAll(".go-details").forEach((button) => {
     location.href = `./detailsPage.html?src=${photoSrc}`;
   });
 });
-
 
 document.querySelectorAll(".contact-owner").forEach((button) => {
   button.addEventListener("click", function () {
